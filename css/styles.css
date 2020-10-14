@@ -4,20 +4,94 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	font-size: 16px;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: black;
+    background: #050505;
 }
-
 a {
 	text-decoration: none;
 }
 
+::-webkit-scrollbar-thumb{
+	background: #050505;
+}
+.navbar{
+	position: fixed;
+    width: 98.7vw;
+    height: 5rem;
+	background-color: #23232e;
+	z-index: 2;
+}
+
+.navbar-nav{
+    list-style: none;
+	display: flex;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #b6b6b6;
+    text-decoration: none;
+}
+.nav-link:hover{
+	color: white;
+}
+
+.link-text{
+    font-size: 1rem;
+}
+.nav-item{
+    margin-left: 2vw;
+}
+.title{
+	text-align: center;
+	color: white;
+	font-family: 'Monaco';
+	padding-top: 7rem;
+	z-index: 1;
+}
+.title-text{
+	font-size: 3rem;
+}
+.title-box{
+	padding: 0 5vh;
+	border-bottom: 1px solid white;
+	display: inline-block;
+}
+.slogan{
+	text-align: center;
+	font-family: 'Comic Sans';
+}
+.slogan-text{
+	color: gray;
+	font-size: 1.5rem;
+}
+.slogan-box{
+	padding: 3vh 5vh;
+	display: inline-block;
+}
+
+.sub-title{
+	text-align: center;
+	color: #b7b8b4;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding-top: 7rem;
+	z-index: 1;
+}
+.sub-title-text{
+	font-size: 2rem;
+}
+.sub-title-box{
+	padding: 0 5vh;
+	display: inline-block;
+}
+
 .contenedor {
-	max-width: 1200px;
-	margin:50px auto;
+	margin-top: 5rem;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -71,9 +145,9 @@ figure .frontal {
     color: #fff;
     text-align: center;
 
-    background: #0f0c29;  
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  
+    background: #2f3650;
+    background: -webkit-linear-gradient(to right, #2f3650, #0f0c29);
+    background: linear-gradient(to right,#2f3650, #0f0c29);
 }
 
 
@@ -86,9 +160,10 @@ figure .trasera{   /*mezclamos el texto con la imagen y hacemos que aparezca al 
     backface-visibility: hidden;
     overflow: auto;
 
-    background: #8E0E00;  
-    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  
-    background: linear-gradient(to right, #1F1C18, #8E0E00); 
+    background: #ca3e49;
+    background: -webkit-linear-gradient(to right, #968171,#625449);
+	background: linear-gradient(to right, #968171,#625449);
+	z-index: 5;
 
 
 }
@@ -132,3 +207,18 @@ figure .frontal p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 }
+
+.description{
+	width: 98.7vw;
+	height: auto;
+	display: flex;
+	color: #8b8b8b;
+	justify-content: center;
+}
+
+.description-box{
+	width: 60%;
+	margin-top: 5vh;
+}
+
+
