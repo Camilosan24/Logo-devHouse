@@ -11,16 +11,18 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #050505;
 }
-a {
-	text-decoration: none;
+
+body::-webkit-scrollbar-thumb{
+	background: #6A040F;
+	border-radius: 10px;
+}
+body::-webkit-scrollbar{
+	width: 5px;
 }
 
-::-webkit-scrollbar-thumb{
-	background: #050505;
-}
 .navbar{
 	position: fixed;
-    width: 98.7vw;
+    width: 100vw;
     height: 5rem;
 	background-color: #23232e;
 	z-index: 2;
@@ -33,9 +35,9 @@ a {
 .nav-link{
     display: flex;
     align-items: center;
-    height: 5rem;
-    color: #b6b6b6;
-    text-decoration: none;
+	height: 5rem;
+	text-decoration: none;
+    color: rgb(179, 179, 179);
 }
 .nav-link:hover{
 	color: white;
@@ -47,16 +49,12 @@ a {
 
 .nav-item{
 	margin-left: 2vw;
+	padding: 0vh 3vw;
 	background-color: transparent;
-    color: #ffffff;
     border: 100px #fcfffe;
-
 }
- 
 .nav-item:hover {
-    background-color: #fd0000;
-    color: white;
-    text-decoration: none;
+	background-color: #FCA311;
 }
 
 
@@ -92,6 +90,7 @@ a {
 	text-align: center;
 	color: #b7b8b4;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom: 5vh;
 	padding-top: 7rem;
 	z-index: 1;
 }
@@ -167,17 +166,16 @@ figure .frontal {
 
 
 figure .trasera{   /*mezclamos el texto con la imagen y hacemos que aparezca al rotar la imagen*/
-    position: absolute;
-    top: 0;
-    padding: 20px;
+	list-style-type: square;
+	position: absolute;
+    padding: 40px;
     color: #fff;
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
     overflow: auto;
-
     background: #ca3e49;
-    background: -webkit-linear-gradient(to right, #968171,#625449);
-	background: linear-gradient(to right, #968171,#625449);
+    background: -webkit-linear-gradient(to right, #370617,#6A040F);
+	background: linear-gradient(to right, #370617,#6A040F);
 	z-index: 5;
 
 
@@ -241,18 +239,42 @@ figure .frontal p {
 
 
 /*lado izquierdo*/
+.pasiones{
+	height: auto;
+	width: 98.7vw;
+}
+.pasion-box{
+	width: 65.9vw;
+	margin-left: 17vw;
+}
 
-#contenedor-pasiones-izquierda{
+.preferencias-contenedor{
+	position: relative;
 	background: rgba(255, 255, 255, 0.90);
+	margin-bottom: 8vh;
 	text-align: center;
 	border-radius: 10px;
 	overflow: hidden;        /*targetas derecha*/
-	margin: 80px;
 	height: 330px;
-	width: 900px;	
+	width: 100%;
+	display: flex;
 }
 
-#contenedor-pasiones-izquierda .contenido {
+.preferencias-contenedor:hover{
+	transition-duration: 0.3s;
+	transform: scale(1.01) translateY(-10px);
+}
+
+.preferencias-contenedor img {
+	width: 100%;
+	height: 350px;
+	position: relative;
+}
+.product-image{
+	width: 50%;
+}
+
+.preferencias-contenedor .contenido {
 	position: relative;
 	text-align: center;
 	overflow: hidden;
@@ -260,10 +282,9 @@ figure .frontal p {
 	height: 100%;
 	float: left;
 	width: 50%;
-
 }
 
-#contenedor-pasiones-izquierda .contenido h1{
+.preferencias-contenedor .contenido h1{
 	font-family: 'Old Standard TT', serif;
 	display: inline-block;
 	position: relative;
@@ -272,68 +293,50 @@ figure .frontal p {
 	margin: 15px;
 }
 
-#contenedor-pasiones-izquierda .contenido p {
+.preferencias-contenedor .contenido p {
 	font-family: 'Farsan', cursive;
 	text-align: center;
 	font-size: 18px;
 	color: #000000;
-	
 }
 
-#contenedor-pasiones-izquierda .product-image {
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-	float: right;
-	display: inline-block;
+@media only screen and (max-width: 1000px){
+	.pasion-box{
+		width: 90vw;
+		margin-left: 5vw;
+	}
+}
+@media only screen and (max-width: 750px){
+	.preferencias-contenedor .contenido p {
+		font-family: 'Farsan', cursive;
+		text-align: center;
+		font-size: 15px;
+		color: #000000;
+	}
 }
 
-/*lado derecho*/
-
-#contenedor-pasiones-derecha{
-	background: rgba(255, 255, 255, 0.90);
-	text-align: center;
+.div-logo{
+	width: 98.7vw;
+	height: auto;
+}
+.logo{
+	width: 30%;
+	height: 30%;
+	margin-left: 35%;
+	margin-top: 10vh;
+	margin-bottom: 30vh;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
 	border-radius: 10px;
-	overflow: hidden;                 /*targetas izquierda*/
-	margin: 80px;
-	height: 330px;
-	width: 900px;	
 }
 
-#contenedor-pasiones-derecha .contenido {
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-	padding: 20px;
-	height: 100%;
-	float: right;
-	width: 50%;
-
+.logo:hover{
+	border: 2px solid #9D0208;
+	border-radius: 10px;
+	transition: all ease-out 2s;
+	box-shadow: 1px 1px 10px 1px #6A040F;
+	transform: scale(1.7) translateY(50px);
 }
 
-#contenedor-pasiones-derecha .contenido h1{
-	font-family: 'Old Standard TT', serif;
-	display: inline-block;
-	position: relative;
-	font-size: 40px;
-	color: #20375e;
-	margin: 15px;
-}
-
-#contenedor-pasiones-derecha .contenido p {
-	font-family: 'Farsan', cursive;
-	text-align: center;
-	font-size: 18px;
-	color: #000000;
-}
-
-#contenedor-pasiones-derecha .product-image {
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-	float: left;
-}
-
-#contenedor-pasiones-izquierda img {width: 450px;height: 350px;}
-
-#contenedor-pasiones-derecha img {width: 450px;height: 350px;}
