@@ -44,9 +44,22 @@ a {
 .link-text{
     font-size: 1rem;
 }
+
 .nav-item{
-    margin-left: 2vw;
+	margin-left: 2vw;
+	background-color: transparent;
+    color: #ffffff;
+    border: 100px #fcfffe;
+
 }
+ 
+.nav-item:hover {
+    background-color: #fd0000;
+    color: white;
+    text-decoration: none;
+}
+
+
 .title{
 	text-align: center;
 	color: white;
@@ -89,6 +102,8 @@ a {
 	padding: 0 5vh;
 	display: inline-block;
 }
+
+/*contenedor de targetas de informacion personal*/
 
 .contenedor {
 	margin-top: 5rem;
@@ -222,3 +237,103 @@ figure .frontal p {
 }
 
 
+/*Targetas de pasiones*/
+
+
+/*lado izquierdo*/
+
+#contenedor-pasiones-izquierda{
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;        /*targetas derecha*/
+	margin: 80px;
+	height: 330px;
+	width: 900px;	
+}
+
+#contenedor-pasiones-izquierda .contenido {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	padding: 20px;
+	height: 100%;
+	float: left;
+	width: 50%;
+
+}
+
+#contenedor-pasiones-izquierda .contenido h1{
+	font-family: 'Old Standard TT', serif;
+	display: inline-block;
+	position: relative;
+	font-size: 40px;
+	color: #20375e;
+	margin: 15px;
+}
+
+#contenedor-pasiones-izquierda .contenido p {
+	font-family: 'Farsan', cursive;
+	text-align: center;
+	font-size: 18px;
+	color: #000000;
+	
+}
+
+#contenedor-pasiones-izquierda .product-image {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	float: right;
+	display: inline-block;
+}
+
+/*lado derecho*/
+
+#contenedor-pasiones-derecha{
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;                 /*targetas izquierda*/
+	margin: 80px;
+	height: 330px;
+	width: 900px;	
+}
+
+#contenedor-pasiones-derecha .contenido {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	padding: 20px;
+	height: 100%;
+	float: right;
+	width: 50%;
+
+}
+
+#contenedor-pasiones-derecha .contenido h1{
+	font-family: 'Old Standard TT', serif;
+	display: inline-block;
+	position: relative;
+	font-size: 40px;
+	color: #20375e;
+	margin: 15px;
+}
+
+#contenedor-pasiones-derecha .contenido p {
+	font-family: 'Farsan', cursive;
+	text-align: center;
+	font-size: 18px;
+	color: #000000;
+}
+
+#contenedor-pasiones-derecha .product-image {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+#contenedor-pasiones-izquierda img {width: 450px;height: 350px;}
+
+#contenedor-pasiones-derecha img {width: 450px;height: 350px;}
