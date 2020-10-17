@@ -173,7 +173,6 @@ figure .trasera{   /*mezclamos el texto con la imagen y hacemos que aparezca al 
     color: #fff;
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
-    overflow: auto;
     background: #ca3e49;
     background: -webkit-linear-gradient(to right, #370617,#6A040F);
 	background: linear-gradient(to right, #370617,#6A040F);
