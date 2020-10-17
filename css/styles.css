@@ -337,7 +337,6 @@ figure .frontal p {
 	transform: scale(1.7) translateY(50px);
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 1000px){
 	.pasion-box{
 		width: 90vw;
@@ -385,7 +384,6 @@ figure .frontal p {
 	}
 }
 
-=======
 /*Galeria de logo*/
 
 /*Estilos de la galeria*/
@@ -481,4 +479,3 @@ figure .frontal p {
     padding: 5px;
     border-radius: 50%;
 }
->>>>>>> branch1
