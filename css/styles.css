@@ -135,8 +135,8 @@ figure img {
 }
 
 figure {
-	width: 400px;
-	height: 555px;
+	width: 410px;
+	height: 500px;
 	margin:0;
 	position: relative;
 	transition: all ease .5s;
@@ -187,7 +187,7 @@ figure .frontal .titulo {
 	font-weight: normal;
 	margin-bottom: 50px;
 	font-family: 'Roboto', sans-serif;
-	font-size: 25px;
+	font-size: 32px;
 }
 
 
@@ -218,7 +218,7 @@ figure .frontal hr {
 
 figure .frontal p {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 17px;
 }
 .titulo-secundario{
 	margin-top: 15vh;
