@@ -367,7 +367,7 @@ figure .frontal p {
 		width: 100%;
 	}
 	.nav-item{
-		justify-content: center;
+		text-align: center;
 		width: 25%;
 		padding: 0vh 2vw;
 		background-color: transparent;
