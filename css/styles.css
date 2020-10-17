@@ -20,6 +20,7 @@ body::-webkit-scrollbar{
 	width: 5px;
 }
 
+
 .navbar{
 	position: fixed;
     width: 100vw;
@@ -220,28 +221,6 @@ figure .frontal p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 }
-.titulo-secundario{
-	margin-top: 15vh;
-	font-size: 25px;
-	color: white;
-}
-
-.description{
-	width: 97vw;
-	height: auto;
-	display: flex;
-	color: #8b8b8b;
-	justify-content: center;
-}
-
-.description-box{
-	width: 60%;
-	margin-top: 5vh;
-}
-
-.description-text{
-	margin: 40px 0px;
-}
 
 
 /*Targetas de pasiones*/
@@ -383,7 +362,6 @@ figure .frontal p {
 	}
 }
 
-<<<<<<< HEAD
 /*Galeria de logo*/
 
 /*Estilos de la galeria*/
@@ -479,7 +457,6 @@ figure .frontal p {
     padding: 5px;
     border-radius: 50%;
 }
-=======
 
 /*EDUARDO GUARNIZO ESTILOS*/
 
@@ -749,4 +726,3 @@ template {
 
 [hidden] {
   display: none !important; }
->>>>>>> ee6db8477e122fc021edfd1985b2c5d65252a9dd
