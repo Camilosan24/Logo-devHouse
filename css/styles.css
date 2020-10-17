@@ -237,8 +237,6 @@ figure .frontal p {
 
 /*Targetas de pasiones*/
 
-
-/*lado izquierdo*/
 .pasiones{
 	height: auto;
 	width: 98.7vw;
@@ -296,7 +294,7 @@ figure .frontal p {
 .preferencias-contenedor .contenido p {
 	font-family: 'Farsan', cursive;
 	text-align: center;
-	font-size: 18px;
+	font-size: 16.5px;
 	color: #000000;
 }
 
