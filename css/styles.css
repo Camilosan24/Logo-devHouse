@@ -31,6 +31,7 @@ body::-webkit-scrollbar{
 .navbar-nav{
     list-style: none;
 	display: flex;
+	justify-content: center;
 }
 .nav-link{
 	display: flex;
@@ -51,7 +52,7 @@ body::-webkit-scrollbar{
 	width: 17%;
 	padding: 0vh 3vw;
 	background-color: transparent;
-    border: 100px #fcfffe;
+	border: 100px #fcfffe;
 }
 .nav-item:hover {
 	background-color: #FCA311;
@@ -366,6 +367,7 @@ figure .frontal p {
 		width: 100%;
 	}
 	.nav-item{
+		justify-content: center;
 		width: 25%;
 		padding: 0vh 2vw;
 		background-color: transparent;
