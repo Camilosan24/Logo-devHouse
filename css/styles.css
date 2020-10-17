@@ -33,8 +33,8 @@ body::-webkit-scrollbar{
 	display: flex;
 }
 .nav-link{
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 	height: 5rem;
 	text-decoration: none;
     color: rgb(179, 179, 179);
@@ -48,7 +48,7 @@ body::-webkit-scrollbar{
 }
 
 .nav-item{
-	margin-left: 2vw;
+	width: 17%;
 	padding: 0vh 3vw;
 	background-color: transparent;
     border: 100px #fcfffe;
@@ -222,7 +222,7 @@ figure .frontal p {
 }
 
 .description{
-	width: 98.7vw;
+	width: 97vw;
 	height: auto;
 	display: flex;
 	color: #8b8b8b;
@@ -241,7 +241,7 @@ figure .frontal p {
 /*lado izquierdo*/
 .pasiones{
 	height: auto;
-	width: 98.7vw;
+	width: 97vw;
 }
 .pasion-box{
 	width: 65.9vw;
@@ -249,15 +249,15 @@ figure .frontal p {
 }
 
 .preferencias-contenedor{
+	display: flex;
 	position: relative;
 	background: rgba(255, 255, 255, 0.90);
 	margin-bottom: 8vh;
 	text-align: center;
 	border-radius: 10px;
 	overflow: hidden;        /*targetas derecha*/
-	height: 330px;
+	height: 23rem;
 	width: 100%;
-	display: flex;
 }
 
 .preferencias-contenedor:hover{
@@ -267,7 +267,7 @@ figure .frontal p {
 
 .preferencias-contenedor img {
 	width: 100%;
-	height: 350px;
+	height: 100%;
 	position: relative;
 }
 .product-image{
@@ -300,20 +300,7 @@ figure .frontal p {
 	color: #000000;
 }
 
-@media only screen and (max-width: 1000px){
-	.pasion-box{
-		width: 90vw;
-		margin-left: 5vw;
-	}
-}
-@media only screen and (max-width: 750px){
-	.preferencias-contenedor .contenido p {
-		font-family: 'Farsan', cursive;
-		text-align: center;
-		font-size: 15px;
-		color: #000000;
-	}
-}
+
 
 .div-logo{
 	width: 98.7vw;
@@ -338,5 +325,51 @@ figure .frontal p {
 	transition: all ease-out 2s;
 	box-shadow: 1px 1px 10px 1px #6A040F;
 	transform: scale(1.7) translateY(50px);
+}
+
+@media only screen and (max-width: 1000px){
+	.pasion-box{
+		width: 90vw;
+		margin-left: 5vw;
+	}
+}
+@media only screen and (max-width: 750px){
+	.preferencias-contenedor .contenido p {
+		font-family: 'Farsan', cursive;
+		text-align: center;
+		font-size: 15px;
+		color: #000000;
+	}
+	.preferencias-contenedor .contenido h1{
+		font-size: 20px;
+	}
+	.logo{
+		width: 70%;
+		height: 70%;
+		margin-left: 15%;
+	}
+	.logo:hover{
+		border: 2px solid #9D0208;
+		border-radius: 10px;
+		transition: all ease-out 2s;
+		box-shadow: 1px 1px 10px 1px #6A040F;
+		transform: scale(1.3) translateY(50px);
+	}
+	.preferencias-contenedor{
+		display: block;
+		height: auto;
+	}
+	.product-image{
+		width: 100%;
+	}
+	.preferencias-contenedor .contenido {
+		width: 100%;
+	}
+	.nav-item{
+		width: 25%;
+		padding: 0vh 2vw;
+		background-color: transparent;
+		border: 100px #fcfffe;
+	}
 }
 
